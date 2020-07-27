@@ -2,10 +2,14 @@
 
 # Codemoji 💥
 
-> Emojify your code away!
+> *Emojify your code away!*
 
 *Maciek Bak*  
 *Swiss Institute of Bioinformatics*
+
+## About
+
+
 
 ## License
 
