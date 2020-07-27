@@ -18,9 +18,40 @@ Now you have your chance to retaliate! Prior sharing, convert your work into a b
 
 ## Execution
 
+Codemoji is implemented as a [Python] script, works well with interpreter version +3.5.
+
+The interface of the script is pretty straightforward:
+```text
+$ python codemoji.py --help
+usage: codemoji.py [-h] [-v {DEBUG,INFO,WARN,ERROR,CRITICAL}] [-l LOGFILE] --dictionary DICTIONARY --input INPUT --output OUTPUT
+
+##############################################################################
+#
+#   Codemoji: Emojify your code away!
+#
+#   AUTHOR: Maciek_Bak
+#   AFFILIATION: Swiss_Institute_of_Bioinformatics
+#   CONTACT: very.angry.maciek@gmail.com
+#   CREATED: 27-07-2020
+#   LICENSE: MIT
+#
+##############################################################################
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v {DEBUG,INFO,WARN,ERROR,CRITICAL}, --verbosity {DEBUG,INFO,WARN,ERROR,CRITICAL}
+                        Verbosity/Log level. Defaults to ERROR
+  -l LOGFILE, --logfile LOGFILE
+                        Store log to this file.
+  --dictionary DICTIONARY
+                        Mapping between ASCII characters and emojis.
+  --input INPUT         Path to the input file.
+  --output OUTPUT       Path for the output file.
+```
+
 ## License
 
 MIT License
 
-[Python 3]: https://www.python.org/download/releases/3.0/
+[Python]: https://www.python.org/download/releases/3.0/
 [git]: https://git-scm.com/
