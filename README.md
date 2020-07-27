@@ -49,6 +49,8 @@ optional arguments:
   --output OUTPUT       Path for the output file.
 ```
 
+In its original form Codemoji converts all alphanumerical characters from the standard ASCII table into emojis of my choice (my personal favourites), however the user might specify custom mapping file. Have Fun!
+
 ## License
 
 MIT License
