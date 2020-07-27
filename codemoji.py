@@ -1,14 +1,13 @@
 """
 ##############################################################################
 #
-#   [TITLE, DESCRIPTION]
+#   Codemoji: Emojify your code away!
 #
-#   AUTHOR: Maciej_Bak
+#   AUTHOR: Maciek_Bak
 #   AFFILIATION: Swiss_Institute_of_Bioinformatics
-#   CONTACT: wsciekly.maciek@gmail.com
+#   CONTACT: very.angry.maciek@gmail.com
 #   CREATED: 27-07-2020
-#   LICENSE: GPL_v3.0
-#   USAGE: ...
+#   LICENSE: MIT
 #
 ##############################################################################
 """
@@ -42,16 +41,10 @@ def parse_arguments():
         help="Mapping between ASCII characters and emojis.",
     )
     parser.add_argument(
-        "--input",
-        dest="input",
-        required=True,
-        help="Mapping between ASCII characters and emojis.",
+        "--input", dest="input", required=True, help="Path to the input file.",
     )
     parser.add_argument(
-        "--output",
-        dest="output",
-        required=True,
-        help="Mapping between ASCII characters and emojis.",
+        "--output", dest="output", required=True, help="Path for the output file.",
     )
     return parser
 
@@ -63,7 +56,7 @@ def main():
     """Main body of the script."""
 
     with open(options.dictionary) as f:
-        mapping = {line[0]:line[-1] for line in f.read().splitlines()}
+        mapping = {line[0]: line[-1] for line in f.read().splitlines()}
 
     with open(options.input, "r") as f_in, open(options.output, "w") as f_out:
         for line in f_in.read().splitlines():
